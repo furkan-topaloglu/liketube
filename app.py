@@ -287,6 +287,9 @@ def index():
         return render_template('index.html', authenticated=False)
     
     return render_template('index.html', authenticated=True, user_name=user.name or user.email)
+@app.route('/privacy')
+def privacy():
+    return render_template('privacy.html')
 
 @app.route('/login')
 def login():
