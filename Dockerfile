@@ -21,5 +21,5 @@ RUN mkdir -p /app/data
 EXPOSE 5000
 
 # Run application
-CMD gunicorn -w 4 -b 0.0.0.0:$PORT wsgi:app
+CMD gunicorn -w 1 -b 0.0.0.0:$PORT wsgi:app
 
