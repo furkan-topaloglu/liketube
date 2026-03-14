@@ -6,7 +6,7 @@ load_dotenv()
 class Config:
     """Base configuration"""
     SECRET_KEY = os.getenv('FLASK_SECRET_KEY', 'dev-secret-key-change-in-production')
-    SQLALCHEMY_DATABASE_URI = os.getenv('DATABASE_URL', 'sqlite:///youtube_filter.db')
+    SQLALCHEMY_DATABASE_URI = 'sqlite:///youtube_filter.db'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     # YouTube API
