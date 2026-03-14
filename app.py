@@ -276,8 +276,8 @@ def sync_user_videos(user, force=False):
         raise
 
 # Veritabanı tablolarını oluştur
-with app.app_context():
-    db.create_all()
+# with app.app_context():
+#    db.create_all()
 
 @app.route('/')
 def index():
